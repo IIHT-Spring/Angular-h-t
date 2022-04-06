@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'starter-app';
+  greet= "Hello world message" // string interpolation
 }
