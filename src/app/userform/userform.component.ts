@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-userform',
@@ -12,9 +13,17 @@ export class UserformComponent implements OnInit {
     gender: "Male"
   }
   save() {
-    console.log( "hello mr / mrs " + this.user.name + " you are " + this.user.age + " years old ");
+    // this.userService.createUser(this.user);
+    const observable = this.userService.createUser(this.user);
+    observable.subscribe(response => {
+      console.log(response);
+      
+    })
+
+
+    // console.log( "hello mr / mrs " + this.user.name + " you are " + this.user.age + " years old ");
   }
-  constructor() { }
+  constructor( public userService :UserService) { }
 
   ngOnInit(): void {
   }

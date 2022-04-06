@@ -1,3 +1,28 @@
 {
-  "users": [{ "name": "Ram", "age": 20, "gender": "Male", "id": 1 }]
+  "users": [
+    {
+      "name": "Ram",
+      "age": 20,
+      "gender": "Male",
+      "id": 1
+    },
+    {
+      "name": "nishant",
+      "age": 10,
+      "gender": "Male",
+      "id": 2
+    },
+    {
+      "name": "Ajay",
+      "age": "48",
+      "gender": "Male",
+      "id": 3
+    },
+    {
+      "name": "Susan",
+      "age": "25",
+      "gender": "Female",
+      "id": 4
+    }
+  ]
 }
