@@ -1,6 +1,9 @@
 <p>userform works!</p>
 <input [(ngModel)] = 'user.name' placeholder="Enter your username">
 <br/>
+<input [(ngModel)] = 'user.age' placeholder="Enter your age please">
+<input type="radio" [(ngModel)]="user.gender" value="Male"> Male
+<input type="radio" [(ngModel)]="user.gender" value="Female">Female
 <br/>
 <button (click)="save()">Save user</button>
 
