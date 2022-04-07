@@ -6,4 +6,9 @@
 <input type="radio" [(ngModel)]="user.gender" value="Female">Female
 <br/>
 <button (click)="save()">Save user</button>
+<ol>
+    <li *ngFor='let user of users'>
+        {{user.name}}
+    </li>
+</ol>
 

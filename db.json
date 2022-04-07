@@ -23,6 +23,48 @@
       "age": "25",
       "gender": "Female",
       "id": 4
+    },
+    {
+      "name": "Rishab",
+      "age": "12",
+      "gender": "Male",
+      "id": 5
+    },
+    {
+      "name": "akshjay",
+      "age": "12",
+      "gender": "Male",
+      "id": 6
+    },
+    {
+      "name": "akshjay",
+      "age": "12",
+      "gender": "Male",
+      "id": 7
+    },
+    {
+      "name": "Raghav",
+      "age": "32",
+      "gender": "Male",
+      "id": 8
+    },
+    {
+      "name": "Rishab",
+      "age": "23`",
+      "gender": "Male",
+      "id": 9
+    },
+    {
+      "name": "KEshav",
+      "age": "25",
+      "gender": "Male",
+      "id": 10
+    },
+    {
+      "name": "Anamika",
+      "age": "25",
+      "gender": "Male",
+      "id": 11
     }
   ]
 }
