@@ -7,8 +7,8 @@
 <br/>
 <button (click)="save()">Save user</button>
 <ol>
-    <li *ngFor='let user of users'>
-        {{user.name}}
+    <li *ngFor='let user of users; index as i'>
+        {{user.name}}, {{user.age}} <button (click)="deleteRow(user, i)">Delete user</button>
     </li>
 </ol>
 

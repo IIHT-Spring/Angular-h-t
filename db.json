@@ -65,6 +65,42 @@
       "age": "25",
       "gender": "Male",
       "id": 11
+    },
+    {
+      "name": "Raghav",
+      "age": "54",
+      "gender": "Male",
+      "id": 12
+    },
+    {
+      "name": "Rakesh",
+      "age": "33",
+      "gender": "Male",
+      "id": 14
+    },
+    {
+      "name": "Bobby",
+      "age": "21",
+      "gender": "Male",
+      "id": 16
+    },
+    {
+      "name": "Simran",
+      "age": "43",
+      "gender": "Female",
+      "id": 17
+    },
+    {
+      "name": "Nishant",
+      "age": "32",
+      "gender": "Male",
+      "id": 18
+    },
+    {
+      "name": "Vinay",
+      "age": "12",
+      "gender": "Male",
+      "id": 20
     }
   ]
 }

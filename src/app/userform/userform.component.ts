@@ -5,33 +5,40 @@ import { UserService } from '../user.service';
 @Component({
   selector: 'app-userform',
   templateUrl: './userform.component.html',
-  styleUrls: ['./userform.component.css']
+  styleUrls: ['./userform.component.css'],
 })
 export class UserformComponent implements OnInit {
   user = {
     name: '',
     age: 0,
-    gender: "Male"
+    gender: 'Male',
+  };
+  users = [];
+  deleteRow(user, index) {
+    const observable = this.userService.deleteUser(user);
+    observable.subscribe((response: any) => {
+      // sucess handler
+      console.log(response);
+      this.users.splice(index, 1);
+    });
   }
-  users = []
   save() {
     // this.userService.createUser(this.user);
     const observable = this.userService.createUser(this.user);
-    observable.subscribe((response: any)  => { // sucess handler
-      console.log(response);
-      this.users.push(response);
-      
-    },
-    function (error) {
-      alert("Something went wrong please try again!")
-    });
-
+    observable.subscribe(
+      (response: any) => {
+        // sucess handler
+        console.log(response);
+        this.users.push(response);
+      },
+      function (error) {
+        alert('Something went wrong please try again!');
+      }
+    );
 
     // console.log( "hello mr / mrs " + this.user.name + " you are " + this.user.age + " years old ");
   }
-  constructor( public userService :UserService) { }
+  constructor(public userService: UserService) {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
